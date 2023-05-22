@@ -1,0 +1,48 @@
+/* POSITION
+
+    position: static (padrao) - Não aceita valores de top, bottom, right e left.
+    position: fixed - Fixa o elemento na tela.
+    position: sticky - Age como um adesivo, fixa o elemento só onde eu determinar.
+    position: relative - Posição relativa a posição inicial dele.
+    position: absolute - Posição absoluta (fixa) a algum elemento ou a pagina.
+            - SE não tiver pai / pai for static -> Posiciona referente a pagina.
+            - Se o pai NÃO  fot static -> Posiciona referente ao pai
+
+    propriedades:
+            - top
+            - bottom
+            - left
+            - right
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 200vh;
+    width: 200vw;
+}
+
+.div-dad {
+    height: 350px;
+    width: 350px;
+    background-color: #FF1396;
+    position:fixed;
+    top: 30px;
+}
+
+.div-son {
+    height: 150px;
+    width: 150px;
+    background-color: #FFFF00;
+    position: absolute;
+    top:50px;
+}
+
+
+.tananana {
+    height: 100px;
+    width: 100px;
+    background-color: #FF0000;
+}
